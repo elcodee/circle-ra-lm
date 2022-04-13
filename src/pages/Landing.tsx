@@ -5,9 +5,9 @@ import LandingPage from "../components/LandingPage";
 function Landing() {
   Swal.fire({
     title: "Maintenance !",
-    text: "This website is under contruction, maintenanced by lil el",
+    text: "This website is under maintenanced by lil el",
     icon: "warning",
-    confirmButtonText: "Tutup",
+    confirmButtonText: "ok",
     confirmButtonColor: "#8d3523",
   });
 

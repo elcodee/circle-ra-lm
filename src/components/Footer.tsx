@@ -14,7 +14,9 @@ export default function Footer() {
               <div className="pb-3">
                 <img src="/img/logo.png" width={70} alt="" />
               </div>
-              <p className="m-0 text-white-85">Diaku bukan mengakui.</p>
+              <p className="m-0 text-white-85">
+                Kurang kurangin gaya elit tapi ekonomi sulit :)
+              </p>
             </div>
           </div>
         </div>

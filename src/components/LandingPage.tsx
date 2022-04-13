@@ -23,7 +23,7 @@ export default function LandingPage() {
           <div className="row min-vh-100 align-items-center py-12 justify-content-center">
             <div className="col-lg-8 pt-8 text-center">
               {/* <h6 className="text-white mb-3">Welcome</h6> */}
-              <h1 className="display-2 lh-sm text-white mb-3">
+              <h1 className="display-4 lh-sm text-white mb-3">
                 Ｃｉｒｃｌｅ ૨α
               </h1>
               <div className="w-lg-90 mx-auto">
@@ -43,6 +43,7 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+
       <div
         className="bg-cover bg-no-repeat effect-section"
         style={{
@@ -64,7 +65,7 @@ export default function LandingPage() {
               </div>
               <div className="pt-3">
                 <a className="btn btn-outline-white me-3" href="/home">
-                  Gabung ?
+                  Join
                 </a>
                 {/* <a className="btn btn-outline-white" href="#">
                   Member List

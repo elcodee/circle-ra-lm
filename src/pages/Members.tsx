@@ -7,13 +7,13 @@ import Header from "../components/Header";
 import Member from "../components/Member";
 
 function Members() {
-  Swal.fire({
-    title: "Maintenance !",
-    text: "This website is under contruction, maintenanced by lil el",
-    icon: "warning",
-    confirmButtonText: "Tutup",
-    confirmButtonColor: "#8d3523",
-  });
+  // Swal.fire({
+  //   title: "Maintenance !",
+  //   text: "This website is under contruction, maintenanced by lil el",
+  //   icon: "warning",
+  //   confirmButtonText: "Tutup",
+  //   confirmButtonColor: "#8d3523",
+  // });
 
   return (
     <>
@@ -45,7 +45,7 @@ function Members() {
             title="Káthe fos den eínai aparaítita o ílios."
             desc="Tidak semua cahaya itu matahari dan tidak semua cahaya bisa di
               percaya."
-            btn="Gabung ?"
+            btn="Join"
             link="#1"
           />
 

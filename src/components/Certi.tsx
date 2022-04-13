@@ -12,8 +12,6 @@ export default function Certificate() {
     }
   };
 
-  console.log("CERTI : ", certi);
-
   useEffect(() => {
     getCerti();
   }, []);
@@ -50,21 +48,6 @@ export default function Certificate() {
                       <div className="card-body">
                         <h4>{item.nama}</h4>
                         <p>{item.desc}</p>
-                        <div className="d-flex pt-3 align-items-center">
-                          {/* <div className="nav">
-                            <span className="px-3 py-1 bg-primary-soft text-primary rounded-pill me-2">
-                              <i className="bi bi-chat" />
-                              <small>20</small>
-                            </span>
-                            <span className="px-3 py-1 bg-primary-soft text-primary rounded-pill">
-                              <i className="bi bi-heart me-1" />
-                              <small>20</small>
-                            </span>
-                          </div> */}
-                          <a className="ms-auto link-effect" href="#">
-                            Read More
-                          </a>
-                        </div>
                       </div>
                     </div>
                   </div>

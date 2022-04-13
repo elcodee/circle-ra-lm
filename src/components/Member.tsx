@@ -11,8 +11,6 @@ export default function Member() {
     }
   };
 
-  console.log("MEMBER : ", member);
-
   useEffect(() => {
     getMember();
   }, []);
