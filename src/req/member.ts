@@ -26,3 +26,16 @@ export const getAllMember = async () => {
     };
   }
 };
+
+export const saveNewMember = async (formData: any) => {
+  try {
+    const res = await client.post(`/members`, formData);
+
+    return res.data;
+  } catch (error: any) {
+    return {
+      status: error.response.status,
+      message: error.response.data.message,
+    };
+  }
+};

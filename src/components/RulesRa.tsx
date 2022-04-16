@@ -47,7 +47,7 @@ export default function RulesRa(props: any) {
               <div className="col ps-3">
                 <h6 className="mb-1">IDENTITAS</h6>
                 <p className="m-0">
-                  Wajib CN (Change Name) menggunakan logo & masuk ke family
+                  Wajib CN (Change Name) menggunakan title & masuk ke family
                   tanpa terkecuali.
                 </p>
               </div>
@@ -91,9 +91,9 @@ export default function RulesRa(props: any) {
                 <h6 className="mb-1">KONTRIBUSI</h6>
                 <p className="m-0">
                   Aktif di dalam room & BERPARTISIPASI di kegiatan circle (jika
-                  berhalangan, tolong di konfimasikan ke Leader atau CO Leader),
-                  dan circle ra tidak pernah ada paksaan bayar KAS atau TOPUP
-                  untuk event / party.
+                  berhalangan, tolong di konfimasikan ke Captain / CO Captain /
+                  Admin), dan circle ra tidak pernah ada paksaan bayar KAS atau
+                  TOPUP untuk event / party.
                 </p>
               </div>
             </div>

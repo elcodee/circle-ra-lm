@@ -78,14 +78,27 @@ export default function Member() {
                           </li>
                         </ul>
 
-                        <div className="d-grid gap-2 col-2 mx-auto mt-3">
-                          {item.referal === 1 ? (
-                            <a href={`/daftar/${item.nama}/${item.lm_id}`}>
+                        <div
+                          className="d-grid gap-1 col-2 mt-3"
+                          style={{ marginLeft: 100 }}
+                        >
+                          {item.token === 1 ? (
+                            <a href={`${item.link_token}`} target="tab">
+                              <button
+                                type="button"
+                                className="btn btn-outline-dark btn-sm"
+                              >
+                                Minta Token
+                              </button>
+                            </a>
+                          ) : null}
+                          {item.topup === 1 ? (
+                            <a href={`${item.link_topup}`} target="tab">
                               <button
                                 type="button"
                                 className="btn btn-outline-secondary btn-sm"
                               >
-                                Join
+                                Topup DM
                               </button>
                             </a>
                           ) : null}
