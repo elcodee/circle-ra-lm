@@ -50,17 +50,18 @@ export default function Member() {
                           />
                         </div>
                         <h5>{item.nama}</h5>
-                        <span>{item.role}</span>
+                        {item.role === "Captain" ? (
+                          <span className="badge bg-dark">{item.role}</span>
+                        ) : item.role === "Co-Captain" ? (
+                          <span className="badge bg-dark">{item.role}</span>
+                        ) : item.role === "Admin" ? (
+                          <span className="badge bg-dark">{item.role}</span>
+                        ) : item.role === "Member" ? (
+                          <span className="badge bg-info">{item.role}</span>
+                        ) : item.role === "Trial" ? (
+                          <span className="badge bg-warning">{item.role}</span>
+                        ) : null}
                       </div>
-                      {/* <div className="card-body px-4 py-4 border-bottom text-center">
-                        <div className="h1 mb-0 pb-2 lh-1">$10</div>
-                        <span>Billed monthly per user</span>
-                        <div className="pt-3">
-                          <a className="btn btn-primary-light" href="#">
-                            Get Started
-                          </a>
-                        </div>
-                      </div> */}
                       <div className="card-body px-4 py-3">
                         <ul className="list-unstyled mb-0">
                           <li className="py-0">
@@ -76,6 +77,19 @@ export default function Member() {
                             </ul>
                           </li>
                         </ul>
+
+                        <div className="d-grid gap-2 col-2 mx-auto mt-3">
+                          {item.referal === 1 ? (
+                            <a href={`/daftar/${item.nama}/${item.lm_id}`}>
+                              <button
+                                type="button"
+                                className="btn btn-outline-secondary btn-sm"
+                              >
+                                Join
+                              </button>
+                            </a>
+                          ) : null}
+                        </div>
                       </div>
                     </div>
                   </div>

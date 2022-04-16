@@ -63,7 +63,7 @@ export default function Header() {
             </ul>
           </div>
           {/* End Menu */}
-          <div className="nav flex-column flex-lg-row d-none d-lg-flex">
+          {/* <div className="nav flex-column flex-lg-row d-none d-lg-flex">
             <ul className="navbar-nav ms-auto align-items-center">
               <li className="nav-item">
                 <a href="#" className="btn nav-link">
@@ -79,7 +79,7 @@ export default function Header() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </nav>
     </header>

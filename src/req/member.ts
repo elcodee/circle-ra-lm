@@ -13,7 +13,7 @@ export const getAllMember = async () => {
     res.data.map((item: any) => {
       const data = {
         ...item,
-        role: item.role.value,
+        role: item.user_role.value,
       };
       arr.push(data);
     });

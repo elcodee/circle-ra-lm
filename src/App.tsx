@@ -3,6 +3,7 @@ import Landing from "./pages/Landing";
 import Dashboard from "./pages/Home";
 import Members from "./pages/Members";
 import Rules from "./pages/Rules";
+import Daftar from "./pages/Daftar";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
           <Route path="home" element={<Dashboard />} />
           <Route path="member" element={<Members />} />
           <Route path="rules" element={<Rules />} />
+          <Route path="daftar" element={<Daftar />} />
+          <Route path="daftar/:referal/:idlm" element={<Daftar />} />
 
           {/* OWNER */}
           {/* <PrivateRoute exact path="/transactions" component={Dashboard} /> */}

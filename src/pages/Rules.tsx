@@ -29,7 +29,7 @@ function Rules() {
             desc="Tidak semua cahaya itu matahari dan tidak semua cahaya bisa di
               percaya."
             btn="Join"
-            link="#1"
+            link="/daftar"
           />
 
           {/* Section 3 */}

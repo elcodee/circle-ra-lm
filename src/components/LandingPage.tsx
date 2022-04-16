@@ -64,7 +64,7 @@ export default function LandingPage() {
                 </p>
               </div>
               <div className="pt-3">
-                <a className="btn btn-outline-white me-3" href="/home">
+                <a className="btn btn-outline-white me-3" href="/daftar">
                   Join
                 </a>
                 {/* <a className="btn btn-outline-white" href="#">
