@@ -26,7 +26,7 @@ function RaThr() {
           {/* Section 1 */}
           <About
             title="Ｃｉｒｃｌｅ ૨α  -  THR"
-            desc="Periode 28 April - 1 Mei 2022"
+            desc="Periode 28 April - 2 Mei 2022"
           />
 
           {/* Section 3 */}
