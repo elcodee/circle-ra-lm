@@ -7,7 +7,7 @@ const client = axios.create({
 
 export const getAllEvent = async () => {
   try {
-    const res = await client.get(`/events`);
+    const res = await client.get(`/events?$sort[nama]=1`);
 
     return res.data;
   } catch (error: any) {

@@ -51,10 +51,25 @@ export default function Main() {
                           <li>
                             <b>Waktu : </b> {item.waktu}
                           </li>
+                          <li>
+                            <b>ID Room : </b> {item.id_room}
+                          </li>
+                          <li>
+                            <b>Owner Room : </b> {item.owner_room}
+                          </li>
                         </ul>
-                        <div className="display-5 lh-1 text-primary d-flex m-0 opacity-2">
-                          Daftar <span className="bi bi-arrow-right ms-auto" />
-                        </div>
+                        {item.open == 1 ? (
+                          <a href={item.url_regist}>
+                            <div className="display-5 lh-1 text-primary d-flex m-0 opacity-10">
+                              Daftar{" "}
+                              <span className="bi bi-arrow-right ms-auto" />
+                            </div>
+                          </a>
+                        ) : (
+                          <div className="display-5 lh-1 text-primary d-flex m-0 opacity-2">
+                            Close <span className="bi bi-arrow-right ms-auto" />
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>

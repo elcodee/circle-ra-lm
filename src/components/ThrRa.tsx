@@ -1,14 +1,17 @@
 import { useState } from "react";
+import Swal from "sweetalert2";
+import "../App.css";
 
 export default function ThrRa(props: any) {
-  const [arr, setArr] = useState<any>([
-    "𓂀 › lil ҽӀ",
-    "𓂀 › Mყ Qυҽҽɳ♥️",
-    "𓂀 › ᴇʙᴅɪ",
-    "𓂀 › 𝔭𝔞𝔨𝔠𝔦",
-    "𓂀 › 𝕽𝖎𝖆𝖓𝖆ツ",
-    "𓂀 › 𝙱𝚄𝙻𝙾𝙷",
-  ]);
+  const notif = async () => {
+    Swal.fire({
+      title: "Coming soon !",
+      text: "Tunggu periode di mulai ",
+      icon: "warning",
+      confirmButtonText: "Tutup",
+      confirmButtonColor: "#8d3523",
+    });
+  };
   return (
     <>
       <section
@@ -42,16 +45,22 @@ export default function ThrRa(props: any) {
               <li>
                 Cara Hitung : <i>Total Prize Pool : 10 Orang = Hadiah</i>.
               </li>
+              <li>Prize Pool Tergantung Banyaknya Peserta.</li>
             </ol>
+            <div className="d-grid gap-2">
+              <button className="btn btn-dark btn-sm" onClick={() => notif()}>
+                Gabung
+              </button>
+            </div>
           </div>
 
-          <div className="alert alert-info" role="alert">
+          <div className="alert alert-secondary" role="alert">
             <strong>
               <h2 style={{ textAlign: "center" }}>Prize Pool</h2>
             </strong>
             <hr />
             <strong>
-              <h3 style={{ textAlign: "center" }}>💎 4.098</h3>
+              <h3 style={{ textAlign: "center" }}>💎 0</h3>
             </strong>
           </div>
 
@@ -61,10 +70,10 @@ export default function ThrRa(props: any) {
             data-wow-delay="0.05s"
           >
             <div className="col-md-12">
-              <strong style={{ color: "green" }}>
-                Total Peserta : 5 Orang
+              <strong className="blink_me" style={{ color: "green" }}>
+                Total Peserta : 0 Orang
               </strong>
-              <div className="d-flex">
+              <div className="d-flex" style={{ marginTop: 10 }}>
                 <table className="table table-hover">
                   <thead>
                     <tr>
@@ -72,38 +81,27 @@ export default function ThrRa(props: any) {
                       <th scope="col">User LM</th>
                       <th scope="col">ID LM</th>
                       <th scope="col">Hadiah</th>
+                      <th scope="col">Bukti</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    {/* <tr>
                       <th scope="row">1</th>
                       <td>𓂀 › lil ҽӀ</td>
                       <td>1697160143</td>
                       <td>-</td>
-                    </tr>
+                      <td>
+                        <a href="">Lihat</a>
+                      </td>
+                    </tr> */}
                     <tr>
-                      <th scope="row">2</th>
-                      <td>𓂀 › lil ҽӀ</td>
-                      <td>1697160143</td>
+                      <th scope="row">1</th>
                       <td>-</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>𓂀 › lil ҽӀ</td>
-                      <td>1697160143</td>
                       <td>-</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>𓂀 › lil ҽӀ</td>
-                      <td>1697160143</td>
                       <td>-</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td>𓂀 › lil ҽӀ</td>
-                      <td>1697160143</td>
-                      <td>-</td>
+                      <td>
+                        <a href="">-</a>
+                      </td>
                     </tr>
                   </tbody>
                 </table>

@@ -42,9 +42,8 @@ function Members() {
         <main>
           {/* Section 1 */}
           <About
-            title="Káthe fos den eínai aparaítita o ílios."
-            desc="Tidak semua cahaya itu matahari dan tidak semua cahaya bisa di
-              percaya."
+            title="Member Ｃｉｒｃｌｅ ૨α."
+            desc="Hati-Hati bila bertemu orang yang rusuh / toxic menggunakan title kami & tidak terdaftar di sini itu bukan urusan kami."
             btn="Join"
             link="/daftar"
           />

@@ -44,7 +44,7 @@ export default function Header() {
           >
             <ul className="navbar-nav m-auto">
               <li className="nav-item">
-                <a href="/" className="nav-link">
+                <a href="/home" className="nav-link">
                   Home
                 </a>
               </li>

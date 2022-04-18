@@ -25,9 +25,8 @@ function Rules() {
         <main>
           {/* Section 1 */}
           <About
-            title="Káthe fos den eínai aparaítita o ílios."
-            desc="Tidak semua cahaya itu matahari dan tidak semua cahaya bisa di
-              percaya."
+            title="Rules Ｃｉｒｃｌｅ ૨α."
+            desc="Wajib Patuhi Aturan Yang Ada."
             btn="Join"
             link="/daftar"
           />

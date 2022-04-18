@@ -3,13 +3,13 @@ import Header from "../components/Header";
 import LandingPage from "../components/LandingPage";
 
 function Landing() {
-  Swal.fire({
-    title: "Maintenance !",
-    text: "This website is under maintenance by lil el",
-    icon: "warning",
-    confirmButtonText: "OK",
-    confirmButtonColor: "#8d3523",
-  });
+  // Swal.fire({
+  //   title: "Maintenance !",
+  //   text: "This website is under maintenance by lil el",
+  //   icon: "warning",
+  //   confirmButtonText: "OK",
+  //   confirmButtonColor: "#8d3523",
+  // });
 
   return (
     <>
