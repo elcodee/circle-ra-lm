@@ -6,7 +6,7 @@ export default function ThrRa(props: any) {
   const notif = async () => {
     Swal.fire({
       title: "Coming soon !",
-      text: "Tunggu periode di mulai ",
+      text: "Event Belum Di Mulai",
       icon: "warning",
       confirmButtonText: "Tutup",
       confirmButtonColor: "#8d3523",
@@ -21,31 +21,23 @@ export default function ThrRa(props: any) {
         style={{ marginTop: -50 }}
       >
         <div className="container">
-          {/* <div className="row gy-5 align-items-center">
-            <div
-              className="col-lg-6 pe-xl-10 mt-0 wow fadeInLeft"
-              data-wow-duration="0.5s"
-              data-wow-delay="0.1s"
-            >
-              <h3 className="h1 mb-2">૨α &nbsp; Bagi-Bagi THR</h3>
-            </div>
-          </div>
-          <div className="border-top pt-6 pt-lg-8 mt-2" /> */}
           <div className="alert alert-dark" role="alert">
             <strong>INFO</strong>
             <hr />
             <ol>
-              <li>Setiap Orang hanya bisa 1x ikut & Cuma 1 Akun.</li>
+              <li>Setiap Orang hanya bisa 1x ikut & Cuma 1 Akun</li>
               <li>
                 Nama Akan Di Acak Pada Hari Terakhir Di{" "}
-                <a href="https://wheelofnames.com/id/">wheelofnames.com</a>.
+                <a href="https://wheelofnames.com/id/" target="tab">
+                  wheelofnames.com
+                </a>
               </li>
-              <li>Total Hadiah Max 💎 20.000.</li>
-              <li>Total Pemenang 10 Orang.</li>
+              <li>Total Prize Pool Max 💎 50.000</li>
+              <li>Total Pemenang 10 Orang</li>
               <li>
-                Cara Hitung : <i>Total Prize Pool : 10 Orang = Hadiah</i>.
+                Cara Hitung : <i>Total Prize Pool : 10 Orang = Hadiah</i>
               </li>
-              <li>Prize Pool Tergantung Banyaknya Peserta.</li>
+              <li>Prize Pool Tergantung Banyaknya Peserta</li>
             </ol>
             <div className="d-grid gap-2">
               <button className="btn btn-dark btn-sm" onClick={() => notif()}>

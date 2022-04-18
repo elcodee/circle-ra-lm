@@ -8,13 +8,13 @@ import Member from "../components/Member";
 import ThrRa from "../components/ThrRa";
 
 function RaThr() {
-  Swal.fire({
-    title: "Coming soon !",
-    text: "Tunggu periode di mulai ",
-    icon: "warning",
-    confirmButtonText: "Tutup",
-    confirmButtonColor: "#8d3523",
-  });
+  // Swal.fire({
+  //   title: "Coming soon !",
+  //   text: "Event Belum Di Mulai",
+  //   icon: "warning",
+  //   confirmButtonText: "Tutup",
+  //   confirmButtonColor: "#8d3523",
+  // });
 
   return (
     <>
@@ -26,7 +26,7 @@ function RaThr() {
           {/* Section 1 */}
           <About
             title="Ｃｉｒｃｌｅ ૨α  -  THR"
-            desc="Periode 2* April - * Mei 2022"
+            desc="Periode 28 April - 1 Mei 2022"
           />
 
           {/* Section 3 */}

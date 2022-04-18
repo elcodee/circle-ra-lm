@@ -1,15 +1,30 @@
 import Swal from "sweetalert2";
 import Header from "../components/Header";
 import LandingPage from "../components/LandingPage";
+import { HistoryRouterProps } from "react-router-dom";
 
 function Landing() {
   // Swal.fire({
-  //   title: "Maintenance !",
-  //   text: "This website is under maintenance by lil el",
-  //   icon: "warning",
+  //   imageUrl: "/img/ra-thr.png",
   //   confirmButtonText: "OK",
   //   confirmButtonColor: "#8d3523",
   // });
+
+  Swal.fire({
+    imageUrl: "/img/ra-thr.png",
+    showDenyButton: true,
+    confirmButtonText: "DAFTAR",
+    confirmButtonColor: "#8d3523",
+    denyButtonText: `TUTUP`,
+    denyButtonColor: "#70707c",
+  }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+      window.open("/ra-thr");
+    } else if (result.isDenied) {
+      Swal.fire("Changes are not saved", "", "info");
+    }
+  });
 
   return (
     <>
