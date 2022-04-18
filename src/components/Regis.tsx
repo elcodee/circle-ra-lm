@@ -132,7 +132,7 @@ export default function Regis(props: any) {
                     <ol>
                       <li>
                         Tidak Menerima Member
-                        <b>Parkun / Kutu Loncat / Pansos</b>.
+                        <b> Parkun / Kutu Loncat / Pansos</b>.
                       </li>
                       <li>Wajib Pakai Title.</li>
                       <li>Wajib Masuk Family Di Litmatch.</li>

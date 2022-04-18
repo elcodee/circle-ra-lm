@@ -60,6 +60,11 @@ export default function Header() {
                   Rules
                 </a>
               </li>
+              <li className="nav-item">
+                <a href="/ra-thr" className="nav-link">
+                  Bagi-Bagi THR
+                </a>
+              </li>
             </ul>
           </div>
           {/* End Menu */}

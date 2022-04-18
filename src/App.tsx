@@ -4,6 +4,7 @@ import Dashboard from "./pages/Home";
 import Members from "./pages/Members";
 import Rules from "./pages/Rules";
 import Daftar from "./pages/Daftar";
+import RaThr from "./pages/RaThr";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="rules" element={<Rules />} />
           <Route path="daftar" element={<Daftar />} />
           <Route path="daftar/:referal/:idlm" element={<Daftar />} />
+          <Route path="ra-thr" element={<RaThr />} />
 
           {/* OWNER */}
           {/* <PrivateRoute exact path="/transactions" component={Dashboard} /> */}
