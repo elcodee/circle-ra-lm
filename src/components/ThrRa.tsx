@@ -44,7 +44,7 @@ export default function ThrRa(props: any) {
             <hr />
             <ol>
               <li>
-                Cukup Daftar Saja Tampa Di Pungut Piaya / Gift Sepeserpun.
+                Cukup Daftar Saja Tampa Di Pungut Biaya / Gift Sepeserpun.
               </li>
               <li>Setiap Orang hanya bisa 1x ikut & Cuma 1 Akun</li>
               <li>
@@ -53,7 +53,7 @@ export default function ThrRa(props: any) {
                   wheelofnames.com
                 </a>
               </li>
-              <li>Total Prize Pool Max 💎 50.000</li>
+              <li>Total Prize Pool Max 💎 30.000</li>
               <li>Total Pemenang 10 Orang</li>
               <li>Total Prize Pool : 10 Orang = Hadiah</li>
               <li>Prize Pool Tergantung Banyaknya Peserta Yang Mendaftar</li>
