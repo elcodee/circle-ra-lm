@@ -44,7 +44,7 @@ export default function ThrRa(props: any) {
             <hr />
             <ol>
               <li>
-                Cukup Daftar Saja Tampa Di Pungut Biaya / Gift Sepeserpun.
+                Cukup Daftar Saja Tanpa Di Pungut Biaya / Gift Sepeserpun.
               </li>
               <li>Setiap Orang hanya bisa 1x ikut & Cuma 1 Akun</li>
               <li>
