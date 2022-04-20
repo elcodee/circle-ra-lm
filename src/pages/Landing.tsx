@@ -11,7 +11,7 @@ function Landing() {
   // });
 
   Swal.fire({
-    imageUrl: "/img/ra-thr.png",
+    imageUrl: "/img/circle-ra-thr.png",
     showDenyButton: true,
     confirmButtonText: "DAFTAR",
     confirmButtonColor: "#8d3523",
