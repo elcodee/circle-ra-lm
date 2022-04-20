@@ -13,7 +13,7 @@ function Landing() {
   Swal.fire({
     imageUrl: "/img/circle-ra-thr.png",
     showDenyButton: true,
-    confirmButtonText: "DAFTAR",
+    confirmButtonText: "IKUT",
     confirmButtonColor: "#8d3523",
     denyButtonText: `TUTUP`,
     denyButtonColor: "#70707c",

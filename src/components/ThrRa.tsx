@@ -25,7 +25,36 @@ export default function ThrRa(props: any) {
     }
   };
 
-  console.log("SUM : ", peserta);
+  const handleSearch = async (e: any) => {
+    let filter: any = peserta.filter((x: any) => x.id_lm === e.target.value);
+    if (filter) {
+      setPeserta(filter);
+    }
+
+    if (e.target.value === "") {
+      getThr();
+    }
+  };
+
+  const info = async () => {
+    Swal.fire({
+      html: `
+      <div className=""text-start">
+      <h3>Cara Bergabung</h3>
+      <hr />
+      DM Ke Anggota <a href="/member">Ｃｉｒｃｌｅ ૨α</a><br /><br />
+      <b>Contoh Format </b><br />
+      ID LM : 12345678910 (ID Angka) <br />
+      USERNAME LM : 𓂀 › lil ҽӀ <br />
+      </div>`,
+      showClass: {
+        popup: "animate__animated animate__fadeInDown",
+      },
+      hideClass: {
+        popup: "animate__animated animate__fadeOutUp",
+      },
+    });
+  };
 
   useEffect(() => {
     getThr();
@@ -55,13 +84,18 @@ export default function ThrRa(props: any) {
               </li>
               <li>Total Prize Pool Max 💎 30.000</li>
               <li>Total Pemenang 10 Orang</li>
-              <li>Total Prize Pool : 10 Orang = Hadiah</li>
-              <li>Prize Pool Tergantung Banyaknya Peserta Yang Mendaftar</li>
+              <li>Total Prize Pool : 10 Orang = Hadiah 💎</li>
+              <li>
+                Nilai Prize Pool Tergantung Banyaknya Peserta Yang Mendaftar
+              </li>
             </ol>
             <div className="d-grid gap-2">
-              <button className="btn btn-dark btn-sm" onClick={() => notif()}>
+              <button className="btn btn-dark btn-sm" onClick={() => info()}>
                 Gabung
               </button>
+              {/* <button className="btn btn-dark btn-sm" onClick={() => notif()}>
+                Gabung
+              </button> */}
             </div>
           </div>
 
@@ -86,6 +120,23 @@ export default function ThrRa(props: any) {
               <strong className="blink_me" style={{ color: "green" }}>
                 Total Peserta : {peserta.length} Orang
               </strong>
+              <br />
+              <strong className="" style={{ color: "blue", fontSize: 12 }}>
+                Last Update : 21 Apr 2022 01.32 AM
+              </strong>
+
+              <div className="form-floating mb-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  style={{ marginTop: 10 }}
+                  id="cariID"
+                  name="idLm"
+                  onChange={(e) => handleSearch(e)}
+                  placeholder="cariID"
+                />
+                <label htmlFor="cariID">Cari ID LM</label>
+              </div>
               <div
                 className="d-flex table-responsive"
                 style={{ marginTop: 10 }}
@@ -108,9 +159,11 @@ export default function ThrRa(props: any) {
                             <th scope="row">{index + 1}</th>
                             <td>{item.username}</td>
                             <td>{item.id_lm}</td>
-                            <td>-</td>
+                            <td>{item.hadiah ? item.hadiah : "-"}</td>
                             <td>
-                              <a href="">-</a>
+                              <a href={item.bukti ? item.bukti : ""}>
+                                {item.bukti ? "Lihat" : "-"}
+                              </a>
                             </td>
                           </tr>
                         );
