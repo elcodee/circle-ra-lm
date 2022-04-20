@@ -21,7 +21,7 @@ export default function ThrRa(props: any) {
     let res: any = await getAllThrEvent();
     if (res) {
       setPeserta(res);
-      setPrize(res.reduce((n: any, { point }: any) => n + point, 0));
+      setPrize(res.reduce((n: any, { point }: any) => n + point + 100, 0));
     }
   };
 
@@ -88,6 +88,7 @@ export default function ThrRa(props: any) {
               <li>
                 Nilai Prize Pool Tergantung Banyaknya Peserta Yang Mendaftar
               </li>
+              <li>Slot Tersedia Tak Terbatas</li>
             </ol>
             <div className="d-grid gap-2">
               <button className="btn btn-dark btn-sm" onClick={() => info()}>
@@ -122,12 +123,12 @@ export default function ThrRa(props: any) {
               </strong>
               <br />
               <strong className="" style={{ color: "blue", fontSize: 12 }}>
-                Last Update : 21 Apr 2022 01.32 AM
+                Last Update : 21 Apr 2022 | 02.48 AM
               </strong>
 
               <div className="form-floating mb-3">
                 <input
-                  type="text"
+                  type="number"
                   className="form-control"
                   style={{ marginTop: 10 }}
                   id="cariID"
