@@ -123,7 +123,7 @@ export default function ThrRa(props: any) {
               </strong>
               <br />
               <strong className="" style={{ color: "blue", fontSize: 12 }}>
-                Last Update : 21 Apr 2022 | 02.48 AM
+                Last Update : 21 Apr 2022 | 10.08 AM
               </strong>
 
               <div className="form-floating mb-3">
