@@ -21,7 +21,7 @@ export default function ThrRa(props: any) {
     let res: any = await getAllThrEvent();
     if (res) {
       setPeserta(res);
-      setPrize(res.reduce((n: any, { point }: any) => n + point + 150, 0));
+      setPrize(res.reduce((n: any, { point }: any) => n + point + 135, 0));
     }
   };
 
@@ -178,7 +178,7 @@ export default function ThrRa(props: any) {
               </strong>
               <br />
               <strong className="" style={{ color: "blue", fontSize: 12 }}>
-                Last Update : 22 Apr 2022 | 16.02 PM
+                Last Update : 22 Apr 2022 | 23.31 PM
               </strong>
 
               <div className="form-floating mb-3">
