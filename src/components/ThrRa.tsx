@@ -142,7 +142,7 @@ export default function ThrRa(props: any) {
                 }}
               >
                 {" "}
-                <div style={{ marginTop: -0.6 }}>
+                <div style={{ marginTop: -0.1 }}>
                   {prize >= 10000 && prize <= 12000
                     ? "20%"
                     : prize >= 12000 && prize <= 14000
@@ -178,7 +178,7 @@ export default function ThrRa(props: any) {
               </strong>
               <br />
               <strong className="" style={{ color: "blue", fontSize: 12 }}>
-                Last Update : 22 Apr 2022 | 14.28 AM
+                Last Update : 22 Apr 2022 | 16.02 PM
               </strong>
 
               <div className="form-floating mb-3">
