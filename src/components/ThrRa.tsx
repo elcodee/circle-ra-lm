@@ -21,7 +21,7 @@ export default function ThrRa(props: any) {
     let res: any = await getAllThrEvent();
     if (res) {
       setPeserta(res);
-      setPrize(res.reduce((n: any, { point }: any) => n + point + 100, 0));
+      setPrize(res.reduce((n: any, { point }: any) => n + point + 150, 0));
     }
   };
 
@@ -110,6 +110,61 @@ export default function ThrRa(props: any) {
                 💎 {prize ? prize.toLocaleString("id") : 0}
               </h3>
             </strong>
+
+            <div className="progress">
+              <div
+                className="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow={10000}
+                aria-valuemin={0}
+                aria-valuemax={30000}
+                style={{
+                  width:
+                    prize >= 10 && prize <= 12000
+                      ? "20%"
+                      : prize >= 12000 && prize <= 14000
+                      ? "35%"
+                      : prize >= 14000 && prize <= 16000
+                      ? "45%"
+                      : prize >= 16000 && prize <= 18000
+                      ? "55%"
+                      : prize >= 18000 && prize <= 20000
+                      ? "65%"
+                      : prize >= 20000 && prize <= 22000
+                      ? "70%"
+                      : prize >= 22000 && prize <= 24000
+                      ? "80%"
+                      : prize >= 24000 && prize <= 28000
+                      ? "90%"
+                      : prize > 28000
+                      ? "98%"
+                      : 0,
+                }}
+              >
+                {" "}
+                <div style={{ marginTop: -0.6 }}>
+                  {prize >= 10000 && prize <= 12000
+                    ? "20%"
+                    : prize >= 12000 && prize <= 14000
+                    ? "35%"
+                    : prize >= 14000 && prize <= 16000
+                    ? "45%"
+                    : prize >= 16000 && prize <= 18000
+                    ? "55%"
+                    : prize >= 18000 && prize <= 20000
+                    ? "65%"
+                    : prize >= 20000 && prize <= 22000
+                    ? "70%"
+                    : prize >= 22000 && prize <= 24000
+                    ? "80%"
+                    : prize >= 24000 && prize <= 28000
+                    ? "90%"
+                    : prize > 28000
+                    ? "98%"
+                    : 0}
+                </div>
+              </div>
+            </div>
           </div>
 
           <div
@@ -123,7 +178,7 @@ export default function ThrRa(props: any) {
               </strong>
               <br />
               <strong className="" style={{ color: "blue", fontSize: 12 }}>
-                Last Update : 21 Apr 2022 | 10.08 AM
+                Last Update : 22 Apr 2022 | 14.28 AM
               </strong>
 
               <div className="form-floating mb-3">
@@ -149,7 +204,6 @@ export default function ThrRa(props: any) {
                       <th scope="col">User LM</th>
                       <th scope="col">ID LM</th>
                       <th scope="col">Hadiah</th>
-                      <th scope="col">Bukti</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -160,12 +214,12 @@ export default function ThrRa(props: any) {
                             <th scope="row">{index + 1}</th>
                             <td>{item.username}</td>
                             <td>{item.id_lm}</td>
-                            <td>{item.hadiah ? item.hadiah : "-"}</td>
-                            <td>
+                            <td>{item.hadiah ? item.hadiah : "💎 0"}</td>
+                            {/* <td>
                               <a href={item.bukti ? item.bukti : ""}>
                                 {item.bukti ? "Lihat" : "-"}
                               </a>
-                            </td>
+                            </td> */}
                           </tr>
                         );
                       })
@@ -175,9 +229,9 @@ export default function ThrRa(props: any) {
                         <td>-</td>
                         <td>-</td>
                         <td>-</td>
-                        <td>
+                        {/* <td>
                           <a href="">-</a>
-                        </td>
+                        </td> */}
                       </tr>
                     )}
                   </tbody>
