@@ -10,20 +10,38 @@ function Landing() {
   //   confirmButtonColor: "#8d3523",
   // });
 
+  // Swal.fire({
+  //   imageUrl: "/img/circle-ra-thr.png",
+  //   showDenyButton: true,
+  //   confirmButtonText: "IKUT",
+  //   confirmButtonColor: "#8d3523",
+  //   denyButtonText: `TUTUP`,
+  //   denyButtonColor: "#70707c",
+  // }).then((result) => {
+  //   /* Read more about isConfirmed, isDenied below */
+  //   if (result.isConfirmed) {
+  //     window.open("/ra-thr");
+  //   } else if (result.isDenied) {
+  //     // Swal.fire("Changes are not saved", "", "info");
+  //   }
+  // });
+
+  let timerInterval: any;
+
   Swal.fire({
-    imageUrl: "/img/circle-ra-thr.png",
-    showDenyButton: true,
-    confirmButtonText: "IKUT",
-    confirmButtonColor: "#8d3523",
-    denyButtonText: `TUTUP`,
-    denyButtonColor: "#70707c",
-  }).then((result) => {
-    /* Read more about isConfirmed, isDenied below */
-    if (result.isConfirmed) {
-      window.open("/ra-thr");
-    } else if (result.isDenied) {
-      // Swal.fire("Changes are not saved", "", "info");
-    }
+    title: "Topup Aman Terpercaya",
+    html: `<a href="https://flazz-topup.vercel.app/order/aplikasi?cat=litmatch" target="tab">www.s.id/fazztopup</a>`,
+    timer: 3000,
+    timerProgressBar: true,
+    showConfirmButton: false,
+    showCancelButton: false,
+    showCloseButton: false,
+    // didOpen: () => {
+    //   Swal.showLoading();
+    // },
+    willClose: () => {
+      clearInterval(timerInterval);
+    },
   });
 
   return (

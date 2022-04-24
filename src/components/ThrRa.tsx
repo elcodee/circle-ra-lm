@@ -68,7 +68,7 @@ export default function ThrRa(props: any) {
         style={{ marginTop: -50 }}
       >
         <div className="container">
-          <div className="alert alert-dark" role="alert">
+          {/* <div className="alert alert-dark" role="alert">
             <strong>INFO</strong>
             <hr />
             <ol>
@@ -94,11 +94,8 @@ export default function ThrRa(props: any) {
               <button className="btn btn-dark btn-sm" onClick={() => info()}>
                 Gabung
               </button>
-              {/* <button className="btn btn-dark btn-sm" onClick={() => notif()}>
-                Gabung
-              </button> */}
             </div>
-          </div>
+          </div> */}
 
           <div className="alert alert-secondary" role="alert">
             <strong>
@@ -110,61 +107,28 @@ export default function ThrRa(props: any) {
                 💎 {prize ? prize.toLocaleString("id") : 0}
               </h3>
             </strong>
+          </div>
 
-            <div className="progress">
-              <div
-                className="progress-bar bg-success progress-bar-striped progress-bar-animated"
-                role="progressbar"
-                aria-valuenow={10000}
-                aria-valuemin={0}
-                aria-valuemax={30000}
-                style={{
-                  width:
-                    prize >= 10 && prize <= 12000
-                      ? "20%"
-                      : prize >= 12000 && prize <= 14000
-                      ? "35%"
-                      : prize >= 14000 && prize <= 16000
-                      ? "45%"
-                      : prize >= 16000 && prize <= 18000
-                      ? "55%"
-                      : prize >= 18000 && prize <= 20000
-                      ? "65%"
-                      : prize >= 20000 && prize <= 22000
-                      ? "70%"
-                      : prize >= 22000 && prize <= 24000
-                      ? "80%"
-                      : prize >= 24000 && prize <= 28000
-                      ? "90%"
-                      : prize > 28000
-                      ? "98%"
-                      : 0,
-                }}
-              >
-                {" "}
-                <div style={{ marginTop: -0.1 }}>
-                  {prize >= 10000 && prize <= 12000
-                    ? "20%"
-                    : prize >= 12000 && prize <= 14000
-                    ? "35%"
-                    : prize >= 14000 && prize <= 16000
-                    ? "45%"
-                    : prize >= 16000 && prize <= 18000
-                    ? "55%"
-                    : prize >= 18000 && prize <= 20000
-                    ? "65%"
-                    : prize >= 20000 && prize <= 22000
-                    ? "70%"
-                    : prize >= 22000 && prize <= 24000
-                    ? "80%"
-                    : prize >= 24000 && prize <= 28000
-                    ? "90%"
-                    : prize > 28000
-                    ? "98%"
-                    : 0}
-                </div>
-              </div>
-            </div>
+          <div className="alert alert-info" role="alert">
+            <strong>PERHATIAN </strong>
+            <hr />
+            <ul>
+              <li>
+                Kami sudah mengumpulkan 61 partisipan untuk diacak di{" "}
+                <a href="https://wheelofnames.com/id/" target="tab">
+                  wheelofnames.com
+                </a>
+              </li>
+              <li>
+                Total Prize Pool Saat Ini 💎 14.680 : 10 Pemenang = 💎 1.468 /
+                ID
+              </li>
+              <li>
+                Akan Di Umumkan Malan Ini Pukul 19.00 WIB Di Room 𓂀 › lil ҽӀ |
+                ID Room : 1697160143
+              </li>
+              <li>Bagi 10 Pemenang Yang Beruntung Silahkan DM Ke 𓂀 › lil ҽӀ</li>
+            </ul>
           </div>
 
           <div
@@ -178,7 +142,7 @@ export default function ThrRa(props: any) {
               </strong>
               <br />
               <strong className="" style={{ color: "blue", fontSize: 12 }}>
-                Last Update : 22 Apr 2022 | 23.31 PM
+                Last Update : 25 Apr 2022 | 02.38 AM
               </strong>
 
               <div className="form-floating mb-3">
@@ -204,6 +168,7 @@ export default function ThrRa(props: any) {
                       <th scope="col">User LM</th>
                       <th scope="col">ID LM</th>
                       <th scope="col">Hadiah</th>
+                      <th scope="col">Bukti</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -215,11 +180,11 @@ export default function ThrRa(props: any) {
                             <td>{item.username}</td>
                             <td>{item.id_lm}</td>
                             <td>{item.hadiah ? item.hadiah : "💎 0"}</td>
-                            {/* <td>
+                            <td>
                               <a href={item.bukti ? item.bukti : ""}>
                                 {item.bukti ? "Lihat" : "-"}
                               </a>
-                            </td> */}
+                            </td>
                           </tr>
                         );
                       })
@@ -229,9 +194,9 @@ export default function ThrRa(props: any) {
                         <td>-</td>
                         <td>-</td>
                         <td>-</td>
-                        {/* <td>
+                        <td>
                           <a href="">-</a>
-                        </td> */}
+                        </td>
                       </tr>
                     )}
                   </tbody>

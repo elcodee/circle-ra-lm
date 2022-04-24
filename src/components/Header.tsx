@@ -65,6 +65,15 @@ export default function Header() {
                   Bagi-Bagi THR
                 </a>
               </li>
+              <li className="nav-item">
+                <a
+                  href="https://s.id/fazztopup"
+                  target="tab"
+                  className="nav-link"
+                >
+                  Topup Murah
+                </a>
+              </li>
             </ul>
           </div>
           {/* End Menu */}
