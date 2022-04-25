@@ -7,7 +7,7 @@ const client = axios.create({
 
 export const getAllThrEvent = async () => {
   try {
-    const res = await client.get(`/thr?$sort[id_lm]=-1`);
+    const res = await client.get(`/thr?$sort[hadiah]=-1`);
 
     return res.data;
   } catch (error: any) {

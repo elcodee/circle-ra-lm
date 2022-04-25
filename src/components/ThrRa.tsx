@@ -97,7 +97,7 @@ export default function ThrRa(props: any) {
             </div>
           </div> */}
 
-          <div className="alert alert-secondary" role="alert">
+          {/* <div className="alert alert-secondary" role="alert">
             <strong>
               <h2 style={{ textAlign: "center" }}>Prize Pool</h2>
             </strong>
@@ -107,27 +107,31 @@ export default function ThrRa(props: any) {
                 💎 {prize ? prize.toLocaleString("id") : 0}
               </h3>
             </strong>
-          </div>
+          </div> */}
 
-          <div className="alert alert-info" role="alert">
-            <strong>PERHATIAN </strong>
+          <div className="alert alert-success" role="alert">
+            <strong>INFORMASI </strong>
             <hr />
             <ul>
               <li>
-                Kami sudah mengumpulkan 61 partisipan untuk diacak di{" "}
-                <a href="https://wheelofnames.com/id/" target="tab">
-                  wheelofnames.com
+                Selamat Kepada 10 Orang Pemenang, Lihat bukti Lengkap{" "}
+                <a
+                  href="https://files.elcodee.com/circle-ra/pemenang-thr/bukti.png"
+                  target="tab"
+                >
+                  Klik Disini
                 </a>
+                .
               </li>
-              <li>
-                Total Prize Pool Saat Ini 💎 14.680 : 10 Pemenang = 💎 1.468 /
-                ID
-              </li>
-              <li>Akan Di Umumkan Malam Ini Di Postingan 𓂀 › lil ҽӀ</li>
               <li>
                 Hadiah 💎 Akan Di bagikan lusa 26 April 2022 pukul 10 pagi.
               </li>
               <li>Bagi 10 Pemenang Yang Beruntung Silahkan DM Ke 𓂀 › lil ҽӀ</li>
+              <hr />
+              <li>
+                Terima Kasih Banyak Yang Sudah Ikut Berpartisipasi, Di Tunggu
+                Event-Event Circle Ra Yang Akan Datang stay Tune.
+              </li>
             </ul>
           </div>
 
@@ -142,7 +146,7 @@ export default function ThrRa(props: any) {
               </strong>
               <br />
               <strong className="" style={{ color: "blue", fontSize: 12 }}>
-                Last Update : 25 Apr 2022 | 02.38 AM
+                Last Update : 25 Apr 2022 | 20.12 PM
               </strong>
 
               <div className="form-floating mb-3">
@@ -179,10 +183,15 @@ export default function ThrRa(props: any) {
                             <th scope="row">{index + 1}</th>
                             <td>{item.username}</td>
                             <td>{item.id_lm}</td>
-                            <td>{item.hadiah ? item.hadiah : "💎 0"}</td>
                             <td>
-                              <a href={item.bukti ? item.bukti : ""}>
-                                {item.bukti ? "Lihat" : "-"}
+                              {item.hadiah ? `💎 ${item.hadiah}` : "💎 0"}
+                            </td>
+                            <td>
+                              <a
+                                href={item.link_bukti ? item.link_bukti : ""}
+                                target="tab"
+                              >
+                                {item.link_bukti ? "Lihat" : "-"}
                               </a>
                             </td>
                           </tr>
