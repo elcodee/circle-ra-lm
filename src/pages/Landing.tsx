@@ -30,7 +30,7 @@ function Landing() {
 
   Swal.fire({
     title: "Topup Aman Terpercaya",
-    html: `<a href="https://flazz-topup.vercel.app/order/aplikasi?cat=litmatch" target="tab">www.s.id/fazztopup</a>`,
+    html: `<a href="https://flazz-topup.vercel.app/order/aplikasi?category=litmatch">www.s.id/fazztopup</a>`,
     timer: 3000,
     timerProgressBar: true,
     showConfirmButton: false,
