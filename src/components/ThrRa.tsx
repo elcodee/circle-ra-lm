@@ -123,9 +123,9 @@ export default function ThrRa(props: any) {
                 Total Prize Pool Saat Ini 💎 14.680 : 10 Pemenang = 💎 1.468 /
                 ID
               </li>
+              <li>Akan Di Umumkan Malam Ini Di Postingan 𓂀 › lil ҽӀ</li>
               <li>
-                Akan Di Umumkan Malan Ini Pukul 19.00 WIB Di Room 𓂀 › lil ҽӀ |
-                ID Room : 1697160143
+                Hadiah 💎 Akan Di bagikan lusa 26 April 2022 pukul 10 pagi.
               </li>
               <li>Bagi 10 Pemenang Yang Beruntung Silahkan DM Ke 𓂀 › lil ҽӀ</li>
             </ul>
